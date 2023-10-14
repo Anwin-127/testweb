@@ -5,17 +5,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
+    color: var(--text-color);
     font-family: 'Poppins', sans-serif;
   
 }
+:root {
+    --bg-color: #000;
+    --text-color: #fff;
+  }
 p{
     font-weight: 300;
-    color: white;
+    color: var(--text-color);
 }
 body{
     min-height: 1000px;
-    background-color: #000;
+    background-color: var(--bg-color);
 }
 .banner{
     position: relative;
@@ -24,7 +28,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background-color: var(--bg-color);
     background-size: cover;
 }
 
@@ -34,16 +38,16 @@ body{
 }
 .banner .content h2{
     font-size: 35px;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .banner .content p{
     font-size: 20px;
-    color: #fff;
+    color: var(--text-color);
 }
 .button{
     font-size: 20px;
-    color: #fff;
+    color: var(--text-color);
     background: #ff0157;
     display: inline-block;
     padding: 10px 30px;
@@ -75,7 +79,7 @@ header .logo{
     text-decoration: none;
 }
 header .logo span{
-    color: #fff;
+    color: var(--text-color);
 }
 
 header .navigation{
@@ -90,7 +94,7 @@ header .navigation li{
 
 header .navigation li a{
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color);
     font-weight: 300;
 }
 
@@ -102,18 +106,29 @@ header.sticky{
 }
 
 header.sticky .logo{
-    color: black;
+    color: var(--bg-color);
 }
 header.sticky .logo span{
     
-    color: #fff;
+    color: var(--text-color);
 }
 
 header.sticky .navigation li a{
     text-decoration: none;
-    color: #000;
+    color: var(--bg-color);
     font-weight: 300;
 }
 header.sticky .navigation li a:hover{
-    color: #fff;
+    color: var(--text-color);
+}
+.title h2{
+    font-size: 35px;
+    color: var(--text-colorx);
+    text-align: center;
+}
+@media (max-width:991px) {
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
 }
