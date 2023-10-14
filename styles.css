@@ -21,6 +21,7 @@ p{
 body{
     min-height: 1000px;
     background-color: var(--bg-color);
+    font-family: 'Poppins', sans-serif;
 }
 .banner{
     position: relative;
@@ -98,9 +99,6 @@ header .navigation li a{
     color: var(--text-color);
     font-weight: 300;
 }
-#themeToggle.sticky:hover{
-    filter: invert(1);
-}
 header.sticky{
     background-color: #03a04a;
     padding: 10px 100px;
@@ -171,6 +169,7 @@ header.sticky .navigation li a:hover{
         color: green;
     }
     
+    
     .menuToggle{
         position: relative;
         display: list-item;
@@ -190,6 +189,11 @@ header.sticky .navigation li a:hover{
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    header.sticky .menuToggle.active{
+        filter: invert(0);
+    }
+
 
     header.sticky .menuToggle{
         filter: invert(var(--switch-on));
